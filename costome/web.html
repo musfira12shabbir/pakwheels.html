@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* nev start */
+        .container{
+            display: grid;
+            grid-template-columns: 300px 400px 500px 300px;
+            grid-template-rows: 600px 400px 600px 1300px 600px;
+        }
+        .wow{
+            border: gainsboro 1px solid;
+        }
+        .a1{
+            grid-column: 1/5;
+            background-image: linear-gradient(to top left, rgb(18, 18, 92), rgb(44, 39, 39));
+            background-color: #f2f3f3;
+        }
+        .a2{
+            grid-column: 1/5;
+            background-color: #f2f3f3;
+        }
+        .a3{
+            grid-column: 1/5;
+            background-color: #f2f3f3;
+        }
+        .a4{
+            grid-column: 1/5;
+            background-color: #f2f3f3;
+        }
+        .a5{
+            grid-column: 1/5;
+            background-color: #f2f3f3;
+        }
+        .a6{
+            grid-column: 1/5;
+            background-color: #f2f3f3;
+        }
+         .h{
+
+            height: 200px;
+            /* background-color: cadetblue; */
+        }
+         .head1{
+            height: 50px;
+               border-bottom: 1px solid rgb(71, 69, 69);
+            /* background-color: violet; */
+        }
+        .head2{
+            height: 100px; 
+            /* background-color: yellow; */
+            display: flex;
+        } 
+        .non1{
+            color: rgb(74, 65, 65);
+            height: 40px;
+            width:300px;
+            position: relative;
+            top: 11px;
+            left: 90px;
+            /* background-color: chartreuse; */
+        }
+        .im1{
+            position: relative;
+            bottom: 13px;
+
+        }
+        .im2{
+            color: white;
+            height: 30px;
+            width: 200px;
+            /* background-color:aquamarine; */
+            position: relative;
+            bottom: 30px;
+            left: 140px;
+            font-size: bolder ;
+        }
+        a{
+            color: white;
+            height: 30px;
+            width: 100px;
+            position: relative;
+            left: 1250px;
+            bottom: 60px;
+            font-size: 20px;
+            text-decoration: none;
+            
+        }
+        .nev1{
+            color: white;
+            height: 100px;
+            width: 200px;
+            /* background-color: steelblue; */
+            position: relative;
+            left: 100px;
+            top: 10px;
+        }
+        .nev2{
+            /* background-color: pink; */
+            height: 50px;
+            width: 900px;
+            padding: 5px;
+            font-size: 20px;
+            position: relative;
+            left: 150px;
+            top: 20px;
+        }
+         .nev2  li{
+            color: white;
+            display: inline;
+            padding: 20px;
+        }
+        button{
+            height: 40px;
+            width: 100px;
+            position: relative;
+            left: 200px;
+            top: 30px;
+            font-size: 15px;
+            font-weight: bolder;
+            background-color: rgb(157, 42, 42);
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        /* nev end */
+        /* icons bar start */
+        .icons{
+            height: 300px;
+            width: 60px;
+            position: fixed;
+        }
+        .con{
+            height: 56px;
+            width: 50px;
+            /* background-color: sandybrown; */
+            transition-property: width ;
+            transition-duration: 3s;
+            transition-delay: 1s;
+            transition-timing-function: linear;
+            /* border: 1px black solid; */
+            
+        }
+        .g img:hover{
+            width: 70px;
+        }
+        .f img:hover{
+            width: 70px;
+        }
+        .t img:hover{
+            width: 70px;
+        }
+        .print{
+            background-color: grey;
+        }
+        .print:hover .bom{
+            width: 70px;
+        }
+        .print img{
+            position: relative;
+            left: 5px;
+            top: 5px;
+        }
+        .add img:hover{
+            width: 70px;
+        }
+        .add{
+           
+            background-color: red;
+        }
+        /* icons bar end */
+        .main{
+            width: 500px;
+            color: white;
+            font-size: 42px;
+            position: relative;
+            top: 100px;
+            left: 490px;
+        }
+        .main1{
+            width: 500px;
+            color: white;
+            font-size: 20px;
+            position: relative;
+            top: 100px;
+            left: 490px; 
+        }
+        .main2{
+            background-color: white;
+            height: 50px;
+            width: 800px;
+            position: relative;
+            top: 100px;
+            left: 300px;
+            border-radius: 5px;
+            display: flex;
+            border: black solid 1px;
+        }
+        .main2 .bar1{
+            /* background-color: sienna; */
+            height: 50px;
+            width: 300px;
+            border-right: solid gainsboro 1px;
+          
+        }
+        .main2 .bar1 .text{
+            width: 150px;
+            /* background-color: salmon; */
+            position: relative;
+            top: 20px;
+            left: 30px;
+            font-size: 17px;
+        }
+        .main2 .bar2{
+            /* background-color: royalblue; */
+            height: 50px;
+            width: 210px;
+        }
+        .main2 .bar2 .text1{
+            /* background-color: rosybrown; */
+            width: 100px;
+            position: relative;
+            top: 18px;
+            font-size: 17px;
+            left: 20px;
+        }
+        .main2 .bar3{
+            /* background-color: chocolate; */
+            height: 50px;
+            width: 210px;
+            border-left: solid gainsboro 1px;
+        }
+        .main2 .bar3 .text2{
+            width: 100px;
+            /* background-color: snow; */
+            font-size: 17px;
+            position: relative;
+            top: 18px;
+            left: 20px;
+        }
+        .main2 .bar4{
+            background-color: rgb(90, 128, 13);
+            height: 50px;
+            width: 81px;
+            border-radius: 5px;
+        }
+        .main2 .bar4 img{
+            position: relative;
+            top: 5px;
+            left: 15px;
+        }
+        .but{
+            color: white;
+            height: 20px;
+            width: 150px;
+            background-color: transparent;
+            position: relative;
+            top: 120px;
+            left: 620px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            border: solid white 1px;
+        }
+        /* head end */
+        .he{
+            font-size: 25px;
+            font-weight: bold;
+            width: 600px;
+        }
+        .a2 .he{
+            position: relative;
+            left: 400px;
+            top: 20px;
+        }
+        .box{
+            display: flex;
+        }
+        .non{
+            height: 320px;
+            width: 500px;
+            /* background-color: rosybrown; */
+            border: solid gainsboro 1px;
+            position: relative;
+            left: 250px;
+            top: 25px;
+        }
+        .he1 h2{
+            position: relative;
+            left: 50px;
+            color: rgb(7, 7, 62);
+        }
+        .he1 li{
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 50px;
+        }
+       .he1 button{
+           height: 40px;
+           width: 200px;
+           background-color: red;
+           position: relative;
+           left: 200px;
+        }
+        .he2 h2{
+            position: relative;
+            left: 50px;
+            color: rgb(7, 7, 62);
+        }
+        .he2 li{
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 50px;
+        }
+       .he2 button{
+           height: 40px;
+           width: 200px;
+           background-color: rgb(27, 113, 166);
+           position: relative;
+           left: 200px;
+        }
+        /* second grid end */
+        .a3{
+            background-color: gainsboro;
+        }
+        .a3 h1{
+            position: relative;
+            left: 200px;
+            width: 300px;
+        }
+       .a3 ul{
+            height: 30px;
+            width: 900px;
+            position: relative;
+            left: 250px;
+            border-bottom:1px solid grey ;
+        }
+        .a3 li{
+            
+            display: inline;
+            padding: 20px;
+            margin: 20px;
+            font-size: 20px;
+        }
+        .career{
+            display: flex;
+            position: relative;
+            left: 300px;
+            width: 850px;
+        }
+        .a3 .car{
+            height: 200px;
+            width: 250px;
+            background-color: white;
+            border: 1px solid grey;
+            margin: 10px;
+            border-radius: 5px;
+        }
+       
+        .career h2{
+            text-align: center;
+        }
+        .career1{
+            display: flex;
+            position: relative;
+            left: 300px;
+            width: 850px;
+            /* border: 1px solid red; */
+           
+        }
+        .career1 h2{
+            text-align: center;
+        }
+       /* grid 3 end */
+       .manage{
+        width: 1300px;
+        display: flex;
+        position: relative;
+        left: 90px;
+       }
+       .manage .far{
+        height: 300px;
+        width: 300px;
+        /* background-color: darkolivegreen; */
+        border: 1px solid black;
+        margin: 10px;
+       }
+       .dis{
+        font-size: 25px;
+        color: rgb(10, 10, 61);
+        text-align: center;
+       }
+       .dis1{
+        font-size: 18px;
+        color: green;
+        text-align: center;
+       }
+       .van h2{
+            width: 300px;
+            position: relative;
+            left: 300px;
+       }
+       .kon{
+        position: relative;
+        top: 100px;
+       }
+       .fine{
+        display: flex;
+       }
+       .fine1{
+        display: flex;
+       }
+       .fine2{
+        display: flex;
+       }
+       .fine3{
+        display: flex;
+       }
+       .horn img{
+        background-color: white;
+        height: 80px;
+        width: 80px;
+        border-radius: 100px;
+        border: 1px solid gainsboro;
+       }
+       .horn{
+        width: 90px;
+        /* background-color: coral; */
+        position: relative;
+        left: 350px;
+        height: 70px;
+        padding: 20px;
+       }
+       .cop{
+        font-weight: bolder;
+        color: darkblue;
+        padding: 20px;
+       }
+       .horn1 img{
+        background-color: white;
+        height: 80px;
+        width: 80px;
+        border-radius: 100px;
+        border: 1px solid gainsboro;
+       }
+       .horn1{
+        width: 90px;
+        /* background-color: coral; */
+        position: relative;
+        top: 50px;
+        left: 350px;
+        height: 70px;
+        padding: 20px;
+       }
+       .cop1{
+        font-weight: bolder;
+        color: darkblue;
+        padding: 20px;
+       } 
+       .horn2 img{
+        background-color: white;
+        height: 80px;
+        width: 80px;
+        border-radius: 100px;
+        border: 1px solid gainsboro;
+       }
+       .horn2{
+        width: 90px;
+        /* background-color: coral; */
+        position: relative;
+        top:100px;
+        left: 350px;
+        height: 70px;
+        padding: 20px;
+       }
+       .cop2{
+        font-weight: bolder;
+        color: darkblue;
+        padding: 20px;
+       }
+       .horn3 img{
+        background-color: white;
+        height: 80px;
+        width: 80px;
+        border-radius: 100px;
+        border: 1px solid gainsboro;
+       }
+       .horn3{
+        width: 90px;
+        /* background-color: coral; */
+        position: relative;
+        top:150px;
+        left: 350px;
+        height: 70px;
+        padding: 20px;
+       }
+       .cop3{
+        font-weight: bolder;
+        color: darkblue;
+        padding: 20px;
+       }
+       .gum h1{
+        width: 400px;
+        position: relative;
+        left: 100px;
+       }
+           /* grid 4 end */
+           .a5{
+        height: 700px;
+        background-color: #23292f;
+        color: rgb(219, 218, 218);
+       }
+       .text{
+        color: darkgray;
+        line-height: 20px;
+        font-size: 15px;
+        width: 200px;
+       }
+       .foot1{
+        position: relative;
+        top: 100px;
+        left: 200px;
+        width: 200px;
+        /* background-color: darkkhaki; */
+       }
+       .foot2{
+        position: relative;
+       left: 400px;
+       top: -140px;
+        width: 200px;
+        /* background-color: darkkhaki; */
+       }
+       .foot3{
+        position: relative;
+        left: 200px;
+        bottom: 100px; 
+        width: 200px;
+        /* background-color: darkkhaki; */
+       }
+       .foot4{
+        position: relative;
+        left: 400px;
+        bottom: 318px;
+        width: 200px;
+        /* background-color: darkkhaki; */
+       }
+       .foot5{
+        position: relative;
+        left: 600px;
+        bottom: 815px;
+        width: 200px;
+        /* background-color: darkkhaki; */
+       }
+       .foot6{
+        position: relative;
+        left: 600px;
+        bottom: 760px;
+        width: 200px;
+        /* background-color: darkkhaki; */
+       }
+       .foot7{
+        position: relative;
+        left: 800px;
+        bottom: 1255px;
+        width: 200px;
+        /* background-color: darkkhaki; */
+       }
+       .foot8{
+        position: relative;
+        left: 800px;
+        bottom: 1200px;
+        width: 200px;
+        /* background-color: darkkhaki; */
+       }
+       .foot9{
+        position: relative;
+        left: 1050px;
+        bottom: 1680px;
+        width: 300px;
+        /* background-color: darkkhaki; */
+       }
+       .foot10{
+        display: flex;
+       }
+       .mail1{
+        color: darkgray;
+        height: 25px;
+        width: 170px;
+        background-color: white;
+        text-align: center;
+       }
+       .mail2{
+        height: 25px;
+        width: 100px;
+        background-color: green;
+         text-align: center;
+       }
+       .picture{
+        display: flex;
+       }
+       .pics img{
+        margin: 5px;
+        padding: 5px;
+        border-radius: 110px;
+       }
+       .home{
+        display: flex;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+       <!-- nev start -->
+       <div class="wow a1">
+        <div class="h head1">
+            <div class="non1"><div class="im1"><img src="images1/mobile.png" height="50px" ></div></div>
+            <div class="non2">
+                <div class="im2">DOWNLOAD APP VIA SMS</div>
+               <a href="">Sign Up</a>>
+                <a href="">Sign In</a>
+            </div>
+        </div>
+        <div class="h head2">
+            <div class="nev1"><img src="images1/ww.svg" alt=""></div>
+            <div class="nev2">
+                <ul>
+                    <li>Used Cars</li>
+                    <li>New Cars</li>
+                    <li>Bikes</li>
+                    <li>Auto Store</li>
+                    <li>Videos</li>
+                    <li>Forums</li>
+                    <li>Blog</li>
+                    <li>More</li>
+                </ul>
+            </div>
+            <button>Postan Ad</button>
+            <!-- nev end -->
+        </div>
+        <div class="icons">
+            <div class="con g"><img src="images1/icong.png"  height="56px" width="50px"></div>
+            <div class="con f"><img src="images1/iconf.png"  height="56px" width="50px"></div>
+            <div class="con t"><img src="images1/icont.png"  height="56px" width="50px"></div>
+            <div class="con print"><img src="images1/print.png"  height="40px" width="40px"></div>
+            <div class="con add"><img src="images1/add.png"  height="56px" width="50px"></div>
+        </div>
+        <div class="main">Find Used Cars In Pakistan</div>
+        <div class="main1">With thousands of cars,we have just the right one for you</div>
+        <div class="main2">
+            <div class="bar1"><div class="text">Car Make or Model</div></div>
+            <div class="bar2"><div class="text1">All Cities</div></div>
+            <div class="bar3"><div class="text2">Price Range</div></div>
+            <div class="bar4"><img src="images1/search.png" height="40px" width="40px"></div>
+        </div>
+        <div class="but">Advanced Filter    ></div>
+    </div>
+        <!-- head end -->
+        <div class="wow a2">
+            <div class="he">Seel Your Cars on PakWheels and Get the Best Price </div>
+            <div class="box">
+                <div class="he1 non">
+                    <h2>Post Your Add on PakWheels</h2>
+                    <ul>
+                        <li>Post Your Add for Free in 3 Easy Steps</li>
+                        <li>Get Genuien Offers From Verified Buyers</li>
+                        <li>Sell Your Cars Fast at the best Price</li>
+                    </ul>
+                    <button>Post Your Add</button>
+                </div>
+                <div class="he2 non">
+                    <h2>Try PakWheels Sell it For Me</h2>
+                    <ul>
+                        <li>Dedicated Sales Expert To Sell Your Car</li>
+                        <li>We Bargain You And Share The Best Offer</li>
+                        <li>We Ensure Safe & Secure Transaction</li>
+                    </ul>
+                    <button>Registar Your Car</button>
+                </div> 
+            </div>   
+        </div>
+        <!-- second  grid end -->
+        <div class="wow a3">
+            <h1>Browse Used Cars</h1>
+            <ul>
+                <li>Category</li>
+                <li>City</li>
+                <li>Make</li>
+                <li>Model</li>
+                <li>Budget</li>
+                <li>Body Type</li>
+            </ul>
+            <div class="career">
+                <div class="car">
+                    <div class="rar"><img src="images1/famil_c.svg" height="150px" width="250px" ></div>
+                    <h2>Family Cars</h2>
+                </div>
+                <div class="car">
+                    <div class="rar1"><img src="images1/auto_c.svg" height="150px" width="250px" ></div>
+                    <h2>Automatics Cars</h2>
+                </div>
+                <div class="car">
+                    <div class="rar2"><img src="images1/big_c.svg" height="150px" width="250px" ></div>
+                    <h2>Big Cars</h2>
+                </div>
+            </div>
+            <div class="career1">
+                <div class="car">
+                    <div class="rar2"><img src="images1/small_c.svg" height="150px" width="250px" ></div>
+                    <h2>Small Cars</h2>
+                </div>
+                <div class="car">
+                    <div class="rar2"><img src="images1/old_c.svg" height="150px" width="250px" ></div>
+                    <h2>Old Cars</h2>
+                </div>
+                <div class="car">
+                    <div class="rar2"><img src="images1/imported_c.svg" height="150px" width="250px" ></div>
+                    <h2>Imported Cars</h2>
+                </div>
+            </div>
+        </div>
+        <!-- grid 3 end -->
+        <div class="wow a4">
+            <div class="gum"><h1>Managed By PakWheels</h1></div>
+            <div class="manage">
+                <div class="far">
+                    <div class="gig"><img src="images1/car1.jpg" ></div>
+                    <div class="dis">Toyoto Carolla</div>
+                    <div class="dis1">PKR 45.7_57.5 lacs</div>
+                </div>
+                <div class="far">
+                    <div class="gig"><img src="images1/car2.jpg" ></div>
+                    <div class="dis">Honda City</div>
+                    <div class="dis1">PKR 37.7_44.8 lacs</div>
+                </div>
+                <div class="far">
+                    <div class="gig"><img src="images1/car3.png" ></div>
+                    <div class="dis">Suzuki Alto</div>
+                    <div class="dis1">PKR 17.0_22.2 lacs</div>
+                </div>
+                <div class="far">
+                    <div class="gig"><img src="images1/car4.jpg" ></div>
+                    <div class="dis">Honda Civic</div>
+                    <div class="dis1">PKR 63.5_75.5 lacs</div>
+                </div>
+            </div>
+            <div class="kon">
+                <div class="van"><h2>New Cars By Make</h2></div>
+                <div class="fine">
+                    <div class="horn"><img src="images1/suzuki.png">
+                    <div class="cop">Suzuki</div></div>
+                    <div class="horn"><img src="images1/Tyota.png"><div class="cop">Suzuki</div></div>
+                    <div class="horn"><img src="images1/Honda.png"><div class="cop">Honda</div></div>
+                    <div class="horn"><img src="images1/KIA.png"><div class="cop">Kia</div></div>
+                    <div class="horn"><img src="images1/hundai.png"><div class="cop">Hundai</div></div>
+                    <div class="horn"><img src="images1/changan.jpg"><div class="cop">Changan</div></div>
+                </div>
+                <div class="fine1"> 
+                    <div class="horn1"><img src="images1/mg.png">
+                    <div class="cop">Mg</div></div>
+                    <div class="horn1"><img src="images1/bmw.png"><div class="cop">BMW</div></div>
+                    <div class="horn1"><img src="images1/audi.png"><div class="cop">Audi</div></div>
+                    <div class="horn1"><img src="images1/proron.png"><div class="cop">Proton</div></div>
+                    <div class="horn1"><img src="images1/united.png"><div class="cop">United</div></div>
+                    <div class="horn1"><img src="images1/porche.png"><div class="cop">Porche</div></div></div>
+                <div class="fine2"> 
+                    <div class="horn2"><img src="images1/mercedes.png">
+                    <div class="cop">Mercedes</div></div>
+                    <div class="horn2"><img src="images1/prince.png"><div class="cop">Prince</div></div>
+                    <div class="horn2"><img src="images1/Honda.png"><div class="cop">Honda</div></div>
+                    <div class="horn2"><img src="images1/DFSK.png"><div class="cop">DFSK</div></div>
+                    <div class="horn2"><img src="images1/Isuzu.png"><div class="cop">Isuzu</div></div>
+                    <div class="horn2"><img src="images1/baic.png"><div class="cop">Baic</div></div></div>
+                <div class="fine3"> 
+                    <div class="horn3"><img src="images1/Peugeot.png">
+                    <div class="cop">Peugeot</div></div>
+                    <div class="horn3"><img src="images1/chery.png"><div class="cop">Chery</div></div>
+                    <div class="horn3"><img src="images1/JMC.png"><div class="cop">Jmc</div></div>
+                    <div class="horn3"><img src="images1/Daehan.png"><div class="cop">Daehan</div></div>
+                    <div class="horn3"><img src="images1/gugu.jpg"><div class="cop">Gugu</div></div>
+            </div>
+        </div>
+        <!-- grid 4 end -->
+        <!-- <div class="wow a5">
+            <div class="foot1">
+                <h3>Cars By Make</h3>
+                <div class="text">Toyota Cars For Sale <br>
+                    Suzuki Cars For Sale <br>
+                    Honda Cars For Sales <br>
+                    Daihatsu Cars for Sale <br>
+                    Mitsubishi Cars for Sale <br>
+                    Nissan Cars for Sale <br>
+                    Mercedes Cars for Sale <br>
+                    Hyundai Cars for Sale <br>
+                    BMW Cars for Sale
+                </div>
+            </div>
+            <div class="foot2">
+                <h3>Cars By City</h3>
+                <div class="text">
+                    Cars in Karachi <br>
+                    Cars in Lahore <br>
+                    Cars in Islamabad <br>
+                    Cars in Rawalpindi <br>
+                    Cars in Peshawar <br>
+                    Cars in Faisalabad <br>
+                    Cars in Multan <br>
+                    Cars in Gujranwala <br>
+                    Cars in Sialkot <br>
+                </div>
+            </div>
+            <div class="foot3">
+                <h3>Cars by Category</h3>
+                <div class="text">
+                    Jeep <br>
+                    Japanese Cars <br>
+                    Imported Cars <br>
+                    Automatic Cars <br>
+                    Low Priced Cars <br>
+                    4x4 Cars <br>
+                    660cc Cars <br>
+                    1000cc Cars <br>
+                </div>
+            </div>
+            <div class="foot4">
+                 <h3>Cars by Body Type</h3> 
+                 <div class="text">
+                    Sedan <br>
+                    Hatchback <br>
+                    SUV <br>
+                    Crossover <br>
+                    Mini Van <br>
+                    Double Cabin <br>
+                    MPV <br>
+                    Van <br>
+                </div> 
+            </div> 
+            <div class="foot5">
+                <h3>Explore PakWheels</h3> 
+                 <div class="text">
+                    Used Cars <br>
+                    Used Bikes <br>
+                    New Cars <br>
+                    Auto Parts & Accessories <br>
+                    Cool Rides <br>
+                    Forums <br>
+                    Autoshow <br>
+                    Sitemap <br>
+                </div> 
+            </div>
+            <div class="foot6">
+                <h3>Cars by Color</h3> 
+                 <div class="text">
+                    White Cars <br>
+                    Silver Cars <br>
+                    Black Cars <br>
+                    Grey Cars <br>
+                    Blue Cars <br>
+                    Red Cars <br>
+                    Green Cars <br>
+                    Gold Cars <br>
+                </div> 
+            </div>
+            <div class="foot7">
+                <h3>PakWheels.com</h3> 
+                 <div class="text">
+                    About PakWheels.com  <br>
+                    Our Products <br>
+                    Advertise With Us <br>
+                    How To Pay <br>
+                    FAQs <br>
+                    Refunds & Returns <br>
+                    Careers <br>
+                    Contact Us <br>
+                   
+                </div> 
+            </div>
+            <div class="foot8">
+                <h3>Cars by Province</h3> 
+                 <div class="text">
+                    Cars in Punjab <br>
+                    Cars in Sindh <br>
+                    Cars in KPK <br>
+                    Cars in Balochistan <br>
+                    Cars in Azad Kashmir <br>
+                    Cars in Federally Administered Tribal Areas <br>
+                   
+                </div> 
+            </div>
+            <div class="foot9">
+                <h3>Sell On PakWheels</h3> 
+                 <div class="text">
+                    Sell Your Car <br> 
+                    Sell Your Bike <br>
+                    Sell Accessory   <br>           
+                </div> 
+                <h3>Subscribe to our Newsletter </h3> 
+                <div class="foot10">
+                    <div class="mail1">name@ email.com</div>
+                    <div class="mail2">subscribe</div>
+                   </div>
+                   <h3>Follow Us</h3>
+                   <div class="picture">
+                        <div class="pics"><img src="images1/facebook.png" height="30px"></div>
+                        <div class="pics"><img src="images1/instagram.jfif" height="30px"></div>
+                        <div class="pics"><img src="images1/twitter.png" height="30px"></div>
+                        <div class="pics"><img src="images1/youtube.png" height="30px"></div>
+                    </div>
+                    <h3>Download Mobile App</h3>
+                    <div class="home">
+                        <div class="see"><img src="images1/play.svg" height="40px"></div>
+                        <div class="see"><img src="images1/apple.svg" height="40px"></div>
+                        <div class="see"><img src="images1/app.svg" height="40px"></div>
+                    </div>
+                </div>
+             </div>
+        </div> -->
+        
+    </div> 
+    <div class="wow a5">
+        <div class="foot1">
+            <h3>Cars By Make</h3>
+            <div class="text">Toyota Cars For Sale <br>
+                Suzuki Cars For Sale <br>
+                Honda Cars For Sales <br>
+                Daihatsu Cars for Sale <br>
+                Mitsubishi Cars for Sale <br>
+                Nissan Cars for Sale <br>
+                Mercedes Cars for Sale <br>
+                Hyundai Cars for Sale <br>
+                BMW Cars for Sale
+            </div>
+        </div>
+        <div class="foot2">
+            <h3>Cars By City</h3>
+            <div class="text">
+                Cars in Karachi <br>
+                Cars in Lahore <br>
+                Cars in Islamabad <br>
+                Cars in Rawalpindi <br>
+                Cars in Peshawar <br>
+                Cars in Faisalabad <br>
+                Cars in Multan <br>
+                Cars in Gujranwala <br>
+                Cars in Sialkot <br>
+            </div>
+        </div>
+        <div class="foot3">
+            <h3>Cars by Category</h3>
+            <div class="text">
+                Jeep <br>
+                Japanese Cars <br>
+                Imported Cars <br>
+                Automatic Cars <br>
+                Low Priced Cars <br>
+                4x4 Cars <br>
+                660cc Cars <br>
+                1000cc Cars <br>
+            </div>
+        </div>
+        <div class="foot4">
+             <h3>Cars by Body Type</h3> 
+             <div class="text">
+                Sedan <br>
+                Hatchback <br>
+                SUV <br>
+                Crossover <br>
+                Mini Van <br>
+                Double Cabin <br>
+                MPV <br>
+                Van <br>
+            </div> 
+        </div> 
+        <div class="foot5">
+            <h3>Explore PakWheels</h3> 
+             <div class="text">
+                Used Cars <br>
+                Used Bikes <br>
+                New Cars <br>
+                Auto Parts & Accessories <br>
+                Cool Rides <br>
+                Forums <br>
+                Autoshow <br>
+                Sitemap <br>
+            </div> 
+        </div>
+        <div class="foot6">
+            <h3>Cars by Color</h3> 
+             <div class="text">
+                White Cars <br>
+                Silver Cars <br>
+                Black Cars <br>
+                Grey Cars <br>
+                Blue Cars <br>
+                Red Cars <br>
+                Green Cars <br>
+                Gold Cars <br>
+            </div> 
+        </div>
+        <div class="foot7">
+            <h3>PakWheels.com</h3> 
+             <div class="text">
+                About PakWheels.com  <br>
+                Our Products <br>
+                Advertise With Us <br>
+                How To Pay <br>
+                FAQs <br>
+                Refunds & Returns <br>
+                Careers <br>
+                Contact Us <br>
+               
+            </div> 
+        </div>
+        <div class="foot8">
+            <h3>Cars by Province</h3> 
+             <div class="text">
+                Cars in Punjab <br>
+                Cars in Sindh <br>
+                Cars in KPK <br>
+                Cars in Balochistan <br>
+                Cars in Azad Kashmir <br>
+                Cars in Federally Administered Tribal Areas <br>
+               
+            </div> 
+        </div>
+        <div class="foot9">
+            <h3>Sell On PakWheels</h3> 
+             <div class="text">
+                Sell Your Car <br> 
+                Sell Your Bike <br>
+                Sell Accessory   <br>           
+            </div> 
+            <h3>Subscribe to our Newsletter </h3> 
+            <div class="foot10">
+                <div class="mail1">name@ email.com</div>
+                <div class="mail2">subscribe</div>
+               </div>
+               <h3>Follow Us</h3>
+               <div class="picture">
+                    <div class="pics"><img src="images1/facebook.png" height="30px"></div>
+                    <div class="pics"><img src="images1/instagram.jfif" height="30px"></div>
+                    <div class="pics"><img src="images1/twitter.png" height="30px"></div>
+                    <div class="pics"><img src="images1/youtube.png" height="30px"></div>
+                </div>
+                <h3>Download Mobile App</h3>
+                <div class="home">
+                    <div class="see"><img src="images1/play.svg" height="40px"></div>
+                    <div class="see"><img src="images1/apple.svg" height="40px"></div>
+                    <div class="see"><img src="images1/app.svg" height="40px"></div>
+                </div>
+            </div>
+         </div>
+    </div> 
+    
+</body>
+</html
